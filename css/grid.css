@@ -1,0 +1,83 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: 1fr 1fr;    
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+
+  .left-col-top {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #2b2b2b; /* 与body一致或再深一点 */
+    padding: 1rem;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.left-col-top h2,
+.left-col-top p {
+    color:blueviolet
+}
+
+
+
+  .right-col-top {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #2b2b2b;
+    min-height: 200px;  
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+  .right-col-top input[type="text"] {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #3a3a3a;
+    border: 2px solid #777;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+
+  .left-col-bottom {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 1rem;
+  }
+  
+
+  .right-col-bottom {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #332703; 
+    min-height: 200px;        
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; 
+  }
+
+  .right-col-top input::-webkit-input-placeholder {
+  color: #ccc;         
+  font-size: 2rem;   
+}
+
+.right-col-top input::-moz-placeholder {
+  color: #ccc;
+  font-size: 2rem;
+}
